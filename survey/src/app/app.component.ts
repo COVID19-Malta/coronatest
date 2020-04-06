@@ -17,5 +17,6 @@ export class AppComponent {
         public router: Router,
         public localeService: LocaleService,
         public pageService: PageService,
-    ) {}
+    ) {
+    }
 }

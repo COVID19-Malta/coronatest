@@ -14,5 +14,7 @@ export class LandingComponent implements OnInit {
         public pageService: PageService
     ) {}
 
-    ngOnInit() {}
+    ngOnInit() {
+//        this.localeService.changeLocale("en_US"); // hard fix to English
+    }
 }

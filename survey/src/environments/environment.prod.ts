@@ -3,6 +3,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export const environment = {
     production: true,
-    apiURL: 'https://bitsilla.com',    
+    apiURL: 'http://localhost:3000',    
 };
 

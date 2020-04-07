@@ -15,11 +15,6 @@ import { AuthModule } from './auth/auth.module';
 import Submission from './submissions/submission.model';
 
 @Module({
-    export function HttpLoaderFactory(http: Http) {
-        return new TranslateHttpLoader(http, "./assets/i18n/", ".json");
-      }
-
-
     imports: [
         SequelizeModule.forFeature([Submission]),
         DatabaseModule,
@@ -33,4 +28,4 @@ import Submission from './submissions/submission.model';
     controllers: [AppController, SubmissionsController],
     providers: [AppService, SubmissionsService]
 })
-export class AppModule {}
+export class AppModule { }

@@ -1,3 +1,6 @@
+# Password file (added by JP)
+src/config/default.js
+
 # compiled output
 /dist
 /node_modules

@@ -18,6 +18,7 @@ async function bootstrap() {
     SwaggerModule.setup('docs', app, document);
 
     app.disable('x-powered-by');
+    app.set('trust proxy', true); // if proxied ... like on ctest.gov.mt
     app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
     app.enableCors({
         origin: true,

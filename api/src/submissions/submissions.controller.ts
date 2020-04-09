@@ -11,7 +11,7 @@ export class SubmissionsController {
     @Post()
     async createSubmission(@Body() createSubmissionDto: CreateSubmissionDto, @Session() session, @Req() req): Promise<any> {
         const sessionID = req.sessionID;
-        const ipAddress = req.headers['x-clientip'] || req.connection.remoteAddress;
+        const ipAddress = req.headers['x-forwarded-for'] ? req.headers['x-forwarded-for'] : req.headers['x-clientip'] || req.connection.remoteAddress;
 
         if (!createSubmissionDto.close_contact) {
             if (createSubmissionDto.exposure || createSubmissionDto.high_risk_country) createSubmissionDto.close_contact = 'yes';

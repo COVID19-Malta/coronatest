@@ -3,6 +3,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 export const environment = {
     production: true,
-    apiURL: 'http://localhost:3000',    
+    apiURL: 'https://ctest.gov.mt/api/v1'    
 };
 

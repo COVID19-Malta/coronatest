@@ -146,6 +146,14 @@ export class FormComponent implements OnInit, AfterViewInit {
             fever: new FormControl(false),
             cough: new FormControl(false),
             shortness_of_breath: new FormControl(false),
+            fatigue: new FormControl(false),
+            sore_throat: new FormControl(false),
+            runny_nose: new FormControl(false),
+            headache: new FormControl(false),
+            muscle_pain: new FormControl(false),
+            loss_of_smell: new FormControl(false),
+            loss_of_taste: new FormControl(false),
+            diarrhoea: new FormControl(false),
         });
 
         this.symptomsOptions = this.formBuilder.group({

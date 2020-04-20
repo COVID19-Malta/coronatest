@@ -126,7 +126,7 @@
 	"info_6": "A healthcare worker (HCW) or other person providing direct care for a COVID-19 case, or laboratory workers handling specimens from a COVID-19 case without recommended personal protective equipment (PPE) or with a possible breach of PPE;",
 	"info_7": "A contact in an aircraft sitting within two seats (in any direction) of the COVID-19 case, travel companions or persons providing care, and crew members serving in the section of the aircraft where the index case was seated (if severity of symptoms or movement of the case indicate more extensive exposure, passengers seated in the entire section or all passengers on the aircraft may be considered close contacts).",
 	"high_risk_medium_symptoms_message": "You may be infected with COVID-19.",
-	"testing_overview_link": "*For an overview of which patients are currently tested for COVID-19, please visit: <a target=\"_blank\" href=\"http://linnamoisa.ee/patsiendile/kasulikud-lingid/koroonaviirus\">http://linnamoisa.ee/patsiendile/kasulikud-lingid/koroonaviirus</a>.",
+	"testing_overview_link": "*For an overview of which patients are currently tested for COVID-19, please visit: <a target=\"_blank\" href=\"https://covid19health.gov.mt/\">https://covid19health.gov.mt/</a>.",
 	"app_authors": "App authors",
 	"app_authors_detailed": "App created by:",
 	"close": "Close",

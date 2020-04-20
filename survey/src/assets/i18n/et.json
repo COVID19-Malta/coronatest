@@ -83,7 +83,7 @@
 	"monitor_health_call_112": "Jälgige oma tervist! Kui seisund halveneb (tekivad hingamisraskused; esineb palavik >38 kraadi koos kuiva köhaga) võtke ühendust oma perearstiga.",
 	"retake_test_when_sick": "Haigussümptomite tekkimisel sooritage see enesehindamistest uuesti.",
 	"risk_group_contact_doctor_when_symptoms": "Kui olete vanem kui 60 või Teil esineb mõni krooniline haigus nagu diabeet, kopsuhaigus või südamehaigus, siis sümptomite tekkimisel võtke koheselt ühendust perearstiga.",
-	"only_call_112_in_an_emergecny": "Kiirabisse (112) pöörduge ainult vältimatu abi saamiseks.",
+	"only_call_112_in_an_emergency": "Kiirabisse (112) pöörduge ainult vältimatu abi saamiseks.",
 	"precautionary_measures_recommended": "Soovitame jälgida üldiseid ettevaatusabinõusid, kuidas end kaitsta, kirjeldatud leheküljel <a target=\"_blank\" href=\"https://www.terviseamet.ee/et/uuskoroonaviirus\">https://www.terviseamet.ee/et/uuskoroonaviirus</a>.",
 	"monitor_health_risk_group": "Jälgige tervist, eriti kui olete vanem kui 60 aastat või Teil esineb mõni krooniline haigus nagu diabeet, kopsuhaigus või südamehaigus.",
 	"call_your_gp_for_treatment": "Võtke ühendust oma perearstiga, kes korraldab Teie edasise uurimise ja ravi.*",

@@ -21,79 +21,89 @@ export class ResultsComponent implements OnInit {
             "monitor_health_risk_group",
             "retake_test_when_sick",
             "only_call_112_in_an_emergency",
-            "precautionary_measures_recommended"
+            "precautionary_measures_recommended",
         ],
         SCENARIO_2: [
             "quarantine_2_weeks",
             "monitor_health_risk_group",
             "retake_test_when_sick",
-            "only_call_112_in_an_emergency"
+            "only_call_112_in_an_emergency",
+            "call_helpline_111",
         ],
         SCENARIO_3: [
             "home_care_2_weeks",
             "monitor_health_detailed",
             "risk_group_contact_doctor",
             "only_call_112_in_an_emergency",
-            "exposed_persons_stay_home"
+            "exposed_persons_stay_home",
+            "call_helpline_111",
         ],
         SCENARIO_4: [
             "home_care_2_weeks",
             "call_your_general_practicioner",
             "check_your_health",
             "only_call_112_in_an_emergency",
-            "exposed_persons_stay_home"
+            "exposed_persons_stay_home",
+            "call_helpline_111",
         ],
         SCENARIO_5: [
             "wear_a_mask",
             "call_ambulance",
             "isolate_until_ambulance_arrives",
-            "exposed_persons_stay_home"
+            "exposed_persons_stay_home",
+            "call_helpline_111",
         ],
         SCENARIO_6: [
             "home_care_monitor",
             "monitor_health_detailed",
             "risk_group_contact_doctor",
             "only_call_112_in_an_emergency",
-            "close_people_no_quarantine"
+            "close_people_no_quarantine",
+            "call_helpline_111",
         ],
         SCENARIO_7: [
             "home_care_2_weeks",
             "call_your_general_practicioner",
             "check_your_health",
             "only_call_112_in_an_emergency",
-            "close_people_no_quarantine"
+            "close_people_no_quarantine",
         ],
         SCENARIO_8: [
             "call_your_gp_for_treatment",
             "quarantine_2_weeks",
             "only_call_112_in_an_emergency",
-            "exposed_persons_stay_home"
+            "exposed_persons_stay_home",
+            "call_helpline_111",
         ],
         SCENARIO_9: [
             "call_your_gp_for_treatment",
             "quarantine_2_weeks",
             "only_call_112_in_an_emergency",
-            "close_people_no_quarantine"
+            "close_people_no_quarantine",
+            "call_helpline_111",
         ],
         SCENARIO_10: [
             "avoid_contact",
             "monitor_health_risk_group",
             "retake_test_when_sick",
-            "only_call_112_in_an_emergency"
+            "only_call_112_in_an_emergency",
+            "call_helpline_111",
         ],
         SCENARIO_11: [
             "home_care_monitor",
             "monitor_health_detailed",
             "risk_group_contact_doctor",
             "only_call_112_in_an_emergency",
-            "close_people_no_quarantine"
+            "close_people_no_quarantine",
+            "call_helpline_111",
         ],
         SCENARIO_12: [
             "home_care_monitor",
             "call_your_general_practicioner",
             "check_your_health",
             "only_call_112_in_an_emergency",
-            "close_people_no_quarantine"
+            "close_people_no_quarantine",
+            "call_helpline_111",
         ]
     };
 

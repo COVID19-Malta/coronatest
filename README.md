@@ -9,7 +9,7 @@ This is a Risk Assessment Tool being developed and tested as a result of a colla
 * Dr Hugo Agius Muscat - Ministry for Health - Malta
 * Mr Mark Captur - MITA
 
-# Coronatest
+# Origin of Source Code
 
 The  original application was developed during the [Hack the Crisis](http://garage48.org/events/hack-the-crisis) hackathon organized by [Garage48](http://garage48.org) and [Accelerate Estonia](https://accelerateestonia.ee) from March 13th through 15th of 2020. The live application can be seen [here](https://coronatest.ee).
 

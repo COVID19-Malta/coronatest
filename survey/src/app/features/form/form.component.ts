@@ -122,9 +122,9 @@ export class FormComponent implements OnInit, AfterViewInit {
         });
 
         this.location = this.formBuilder.group({
-            shareLocation: new FormControl(null, [Validators.required]),
-            longitude: new FormControl(null),
-            latitude: new FormControl(null),
+            //shareLocation: new FormControl(null, [Validators.required]),
+            //longitude: new FormControl(null),
+            //latitude: new FormControl(null),
             county: new FormControl(null),
         });
 
@@ -214,24 +214,6 @@ export class FormComponent implements OnInit, AfterViewInit {
         this.scrollToSectionHook(0);
     }
 
-    getLocation(): void {
-        this.loading = true;
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(position => {
-                const longitude = position.coords.longitude;
-                const latitude = position.coords.latitude;
-                this.location.controls['longitude'].setValue(longitude);
-                this.location.controls['latitude'].setValue(latitude);
-                this.loading = false;
-            }, error => {
-                this.loading = false;
-            }, {timeout: 5000});
-        } else {
-            console.log('No support for geolocation');
-            this.loading = false;
-        }
-    }
-
     private scrollToSectionHook(index) {
         const stepId = this.stepper._getStepLabelId(index);
         const stepElement = document.getElementById(stepId).parentElement;
@@ -275,8 +257,8 @@ export class FormComponent implements OnInit, AfterViewInit {
                 age: +this.general.get('age').value,
                 ...this.exposure.value,
                 county: this.location.controls['county'].value,
-                latitude: this.location.get('latitude').value ? '' + this.location.get('latitude').value : null,
-                longitude: this.location.get('longitude').value ? '' + this.location.get('longitude').value : null,
+                latitude: null,
+                longitude: null,
                 symptoms: this.parseSymptomsToArray(this.symptoms.value),
                 fever_temperature,
                 symptoms_duration: this.symptomsOptions.controls['symptoms_duration'].value ? +this.symptomsOptions.controls['symptoms_duration'].value : null,

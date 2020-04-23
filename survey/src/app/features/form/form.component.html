@@ -128,22 +128,6 @@
             <mat-step [stepControl]="location">
                 <form [formGroup]="location">
                     <ng-template matStepLabel>{{'location' | translate}}</ng-template>
-                    <h4>{{'share_your_location_information' | translate}}</h4>
-                    <p>{{'location_anonymous' | translate}} <a
-                        (click)="pageService.openModal('location')">{{'location_anonymous_information' | translate}}</a>
-                    </p>
-                    <br>
-                    <mat-button-toggle-group formControlName="shareLocation" required>
-                        <mat-button-toggle [value]="true"
-                                           (click)="getLocation()">{{'share' | translate}}</mat-button-toggle>
-                        <mat-button-toggle [value]="false">{{'no_do_not_share' | translate}}</mat-button-toggle>
-                    </mat-button-toggle-group>
-                </form>
-            </mat-step>
-
-            <mat-step *ngIf="!location.controls['shareLocation'].value" [stepControl]="location">
-                <form [formGroup]="location">
-                    <ng-template matStepLabel>{{'location' | translate}}</ng-template>
                     <h4>{{'please_select_county' | translate}}</h4>
                     <mat-form-field>
                         <mat-label>{{'county' | translate}}</mat-label>

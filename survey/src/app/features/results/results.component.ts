@@ -22,6 +22,7 @@ export class ResultsComponent implements OnInit {
             "retake_test_when_sick",
             "only_call_112_in_an_emergency",
             "precautionary_measures_recommended",
+            "call_helpline_111",
         ],
         SCENARIO_2: [
             "quarantine_2_weeks",
@@ -51,7 +52,6 @@ export class ResultsComponent implements OnInit {
             "call_ambulance",
             "isolate_until_ambulance_arrives",
             "exposed_persons_stay_home",
-            "call_helpline_111",
         ],
         SCENARIO_6: [
             "home_care_monitor",
@@ -67,6 +67,7 @@ export class ResultsComponent implements OnInit {
             "check_your_health",
             "only_call_112_in_an_emergency",
             "close_people_no_quarantine",
+            "call_helpline_111",
         ],
         SCENARIO_8: [
             "call_your_gp_for_treatment",

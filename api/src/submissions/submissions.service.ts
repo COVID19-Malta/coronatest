@@ -6,7 +6,7 @@ import { Op } from 'sequelize';
 
 @Injectable()
 export class SubmissionsService {
-    constructor(@InjectModel(Submission) private readonly submissionModel: typeof Submission) {}
+    constructor(@InjectModel(Submission) private readonly submissionModel: typeof Submission) { }
 
     async createSubmission(dto: CreateSubmissionDto, sessionID, IPAddress) {
         // determine scenario
@@ -25,11 +25,12 @@ export class SubmissionsService {
         return scenario;
     }
 
+
     getScenario(dto) {
         let riskGroup = dto.age >= 80 || dto.chronic_conditions ? true : false;
 
         // Has high risk symptoms
-        if (dto.symptoms.some(symptom => ['fever', 'cough', 'shortness_of_breath'].includes(symptom))) {
+        if (dto.symptoms.length > 0) {
             // *** SEVERE SYMPTOMS ***
             if (
                 dto.fever_temperature > 39 &&

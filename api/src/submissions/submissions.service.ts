@@ -27,7 +27,7 @@ export class SubmissionsService {
 
 
     getScenario(dto) {
-        let riskGroup = dto.age >= 80 || dto.chronic_conditions ? true : false;
+        let riskGroup = dto.age >= 65 || dto.chronic_conditions ? true : false; // reduced age of risk group from 80 to 65, GH Issue #29
 
         // Has high risk symptoms
         if (dto.symptoms.length > 0) {

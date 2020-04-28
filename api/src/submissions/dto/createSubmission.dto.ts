@@ -23,8 +23,9 @@ export class CreateSubmissionDto {
     @IsOptional()
     longitude: string;
 
+    /* Remove this validation; JP
     @IsEnum([
-        "Ħ'Attard",
+        "Attard",
         "Balzan",
         "Birgu",
         "Birkirkara",        
@@ -94,7 +95,7 @@ export class CreateSubmissionDto {
         "Żebbuġ Malta",
         "Żejtun",
         "Żurrieq",    
-    ])
+    ])*/
     @IsOptional()
     county: string;
 

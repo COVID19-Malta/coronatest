@@ -38,7 +38,7 @@ export class SubmissionsService {
             ) {
                 return {
                     probability: 'SEVERE',
-                    risk_message: 'high_risk_severe_symptoms_message',
+                    risk_message: 'scenario_headline_suggestive_symptoms',
                     act_message: 'how_to_act_health_board',
                     scenario: 'SCENARIO_5',
                     scenario_description: 'Severe symptoms'
@@ -50,7 +50,7 @@ export class SubmissionsService {
                 if (dto.close_contact === 'yes') {
                     return {
                         probability: 'HIGH',
-                        risk_message: 'risk_group_symptoms_message',
+                        risk_message: 'scenario_headline_suggestive_symptoms_age_chronic_warning',
                         act_message: 'how_to_act_health_board',
                         scenario: 'SCENARIO_8',
                         scenario_description: 'Moderate or mild symptoms, risk group, close contact'
@@ -58,7 +58,7 @@ export class SubmissionsService {
                 } else {
                     return {
                         probability: 'MEDIUM',
-                        risk_message: 'risk_group_symptoms_message',
+                        risk_message: 'scenario_headline_suggestive_symptoms',
                         act_message: 'how_to_act_health_board',
                         scenario: 'SCENARIO_9',
                         scenario_description: 'Moderate or mild symptoms, risk group, no close contact'
@@ -78,7 +78,7 @@ export class SubmissionsService {
                 if (dto.close_contact === 'yes') {
                     return {
                         probability: 'HIGH',
-                        risk_message: 'high_risk_medium_symptoms_message',
+                        risk_message: 'scenario_headline_suggestive_symptoms',
                         act_message: 'how_to_act_health_board',
                         scenario: 'SCENARIO_4',
                         scenario_description: 'Moderate symptoms, close contact'
@@ -88,7 +88,7 @@ export class SubmissionsService {
                 else if (dto.close_contact === 'maybe') {
                     return {
                         probability: 'MEDIUM',
-                        risk_message: 'medium_risk_medium_symptoms_message',
+                        risk_message: 'scenario_headline_respiratory_illness',
                         act_message: 'how_to_act_health_board',
                         scenario: 'SCENARIO_12',
                         scenario_description: 'Moderate symptoms, maybe close contact'
@@ -96,7 +96,7 @@ export class SubmissionsService {
                 } else {
                     return {
                         probability: 'LOW',
-                        risk_message: 'low_risk_medium_symptoms_message',
+                        risk_message: 'scenario_headline_suggestive_symptoms',
                         act_message: 'how_to_act_health_board',
                         scenario: 'SCENARIO_7',
                         scenario_description: 'Moderate symptoms, no close contact'
@@ -109,7 +109,7 @@ export class SubmissionsService {
             else if (dto.close_contact === 'yes') {
                 return {
                     probability: 'HIGH',
-                    risk_message: 'high_risk_light_symptoms_message',
+                    risk_message: 'scenario_headline_suggestive_symptoms',
                     act_message: 'how_to_act_health_board',
                     scenario: 'SCENARIO_3',
                     scenario_description: 'Mild symptoms, close contact'
@@ -119,7 +119,7 @@ export class SubmissionsService {
             else if (dto.close_contact === 'maybe') {
                 return {
                     probability: 'MEDIUM',
-                    risk_message: 'medium_risk_light_symptoms_message',
+                    risk_message: 'scenario_headline_suggestive_symptoms',
                     act_message: 'how_to_act_health_board',
                     scenario: 'SCENARIO_11',
                     scenario_description: 'Mild symptoms, maybe close contact'
@@ -129,7 +129,7 @@ export class SubmissionsService {
             else {
                 return {
                     probability: 'MEDIUM',
-                    risk_message: 'low_risk_light_symptoms_message',
+                    risk_message: 'scenario_headline_suggestive_symptoms',
                     act_message: 'how_to_act_health_board',
                     scenario: 'SCENARIO_6',
                     scenario_description: 'Mild symptoms, no close contact'
@@ -152,7 +152,7 @@ export class SubmissionsService {
             else if (dto.close_contact === 'maybe') {
                 return {
                     probability: 'MEDIUM',
-                    risk_message: 'medium_risk_message',
+                    risk_message: 'scenario_headline_monitor_symptoms',
                     act_message: 'how_to_act_health_board',
                     scenario: 'SCENARIO_10',
                     scenario_description: 'Healthy patient, maybe close contact'

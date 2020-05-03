@@ -7,10 +7,19 @@ services:
     environment:
       - JWT_SECRET=secret
       - SESSION_SECRET=secret
-      - DB_HOST=host.docker.internal
+      - DB_HOST=db
       - DB_PORT=5432
-      - DB_USERNAME=root
-      - DB_PASSWORD=root
+      - DB_USERNAME=corona
+      - DB_PASSWORD=corona
       - DB_DATABASE=corona
-      - DB_READ_REPLICA_HOST=host.docker.internal
+      - DB_READ_REPLICA_HOST=db
       - API_TOKEN=token
+    depends_on:
+      - db
+
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: corona
+      POSTGRES_PASSWORD: corona

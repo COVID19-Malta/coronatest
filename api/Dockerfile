@@ -1,7 +1,12 @@
-FROM node:alpine
+FROM node:12-alpine
 
 RUN apk update
 RUN apk add bash vim
+
+run apk --no-cache add --virtual native-deps \
+  g++ gcc libgcc libstdc++ linux-headers make python3 && \
+  npm install --quiet node-gyp -g &&\
+  npm install --quiet
 
 ARG node_env_var=production
 ENV NODE_ENV $node_env_var
@@ -16,6 +21,9 @@ WORKDIR /opt/app
 
 COPY ./package.json /opt/app
 RUN npm install
+
+RUN apk del native-deps
+
 COPY . /opt/app
 
 COPY ./docker-entrypoint.sh /opt/app

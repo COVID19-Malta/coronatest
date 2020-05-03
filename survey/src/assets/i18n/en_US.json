@@ -76,7 +76,7 @@
 	"isolate_until_ambulance_arrives": "Isolate yourself from others until the ambulance arrives.",
 	"exposed_persons_stay_home": "People you have been in close contact with should remain home for two weeks.",
 	"quarantine_2_weeks": "Remain in quarantine for two weeks.",
-	"call_helpline_111": "Call Helpline 111 for further guidance and advice",
+	"call_helpline_111": "Call <a href=\"tel:111\">Helpline 111</a> for further guidance and advice",
 	"check_your_health": "Monitor your health!",
 	"if_sick_call_112": "In case you develop symptoms, take this self-assessment test again.",
 	"home_care_2_weeks": "Remain in home care for two weeks.",
@@ -272,11 +272,11 @@
 
 	"scenario_no_quarantine":	"You do not need to stay in quarantine.",
 	"scenario_monitor_health":	"Monitor your health, particularly if you are over 60 years old or suffer from a chronic condition such as diabetes, lung disease or heart disease.",
-	"scenario_swab_request_call_111":	"In case you develop any symptoms, call the COVID-19 helpline 111 to request to be swabbed.",
+	"scenario_swab_request_call_111":	"In case you develop any symptoms, call the COVID-19 <a href=\"tel:111\">helpline 111</a> to request to be swabbed.",
 	"scenario_precautions":	"We strongly recommend that you follow general precautionary measures including good hand hygiene to minimize your risk of contracting COVID-19. Further recommendations can be found at <a target=\"_blank\" href=\"https://covid19health.gov.mt/\">covid19health.gov.mt</a>.",
 	"scenario_quarantine_2weeks":	"Remain in quarantine for two weeks from the date you were last in contact with a confirmed COVID-19 case",
-	"scenario_call_111": "Call helpline 111 to request to be tested for COVID-19.",
-	"scenario_call_111_if_symptoms": "In case you develop any symptoms, call helpline 111.",
+	"scenario_call_111": "Call <a href=\"tel:111\">helpline 111</a> to request to be tested for COVID-19.",
+	"scenario_call_111_if_symptoms": "In case you develop any symptoms, call <a href=\"tel:111\">helpline 111</a>.",
 	"scenario_home_care_2weeks": "Even in your test is negative, you should remain in quarantine for two weeks from the date you were in contact with a confirmed COVID-19 case.",
 	"scenario_symptoms_call_doc": "If your symptoms worsen call your family doctor.",
 	"scenario_if_close_contact_2weeks": "If you were in close contact with a known COVID-19 case: You should remain in quarantine for two weeks from the date you were in contact with a confirmed COVID-19 case.",
@@ -287,7 +287,7 @@
 	"scenario_emergency_112": "In case of emergency, call an ambulance (112).",
 	"scenario_stay_at_home_symptoms_subside": "Stay at home until your symptoms subside.",
 	"scenario_symptoms_monitor_call_doc": "Monitor your health! If the condition worsens call your family doctor.",
-		
+
 
 	"scenario_headline_suggestive_symptoms": "Since you are displaying symptoms that may be suggestive of COVID-19, you should get tested for COVID-19.",
 	"scenario_headline_suggestive_symptoms_age_chronic_warning": "Since you are displaying symptoms that may be suggestive of COVID-19, you should get tested for COVID-19. Due to your age and/or your chronic conditions, you are at risk of having a more severe course of the disease.",

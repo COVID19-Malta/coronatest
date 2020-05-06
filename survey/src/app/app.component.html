@@ -3,9 +3,11 @@
     <div class="footer" *ngIf="layoutService.currentLayout !== 'mobile' || router.url !== '/form'">
         <div class="logos">
 
-            <img *ngIf="localeService.locale == 'en_US'" src="assets/images/logo_mt.png" alt="Ministry of Health"
+            <img src="assets/images/logo_mt.png" alt="Ministry of Health"
                 class="logo">
-            <img *ngIf="localeService.locale == 'en_US'" src="assets/images/um_mt.png"
+            <img src="assets/images/covid19info.png"
+                alt="Covid-19 Info" class="logo">
+            <img src="assets/images/um_mt.png"
                 alt="University of Malta" class="logo">
         </div>
         <div class="footer-info">

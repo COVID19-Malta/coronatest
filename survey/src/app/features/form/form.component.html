@@ -88,7 +88,7 @@
                     <ng-container *ngIf="symptoms.controls['fever'].value">
                         <h4>{{'how_high_fever' | translate}}</h4>
                         <mat-form-field>
-                            <mat-label>{{ 'temperature' | translate }} </mat-label>
+                            <mat-label>{{ 'temperature' | translate }} (°C)</mat-label>
                             <input matInput formControlName="fever_temperature" required>
                         </mat-form-field>
                     </ng-container>
